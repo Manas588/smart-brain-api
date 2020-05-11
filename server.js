@@ -108,4 +108,4 @@ app.post('/imageurl', (req, res) => {
     .catch(err => res.status(400).json("unable to work with clarifai"));
 })
 
-app.listen('3001');
+app.listen(process.env.PORT);
